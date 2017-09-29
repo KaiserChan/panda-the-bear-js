@@ -1,3 +1,5 @@
+<!--  PART 1  -->
+
 <!-- 1)
 Select the element that contains the profile image (hint: look for the class). Change the src attribute so it points to a picture of your choosing instead. -->
 
@@ -125,3 +127,14 @@ bioInfoValue
 for (var i = 0; i < bioInfoValue.length; i++) {
     bioInfoValue[i].innerText = null;
 }
+
+
+
+<!--  PART 2  -->
+
+<!-- Removing Elements from DOM  -->
+<!-- 1)
+Panda the Bear is lying about their skills! Take the "time travel" skill off the page to satisfy your personal sense of justice. Use your googling and docs-skimming skillz to find a jQuery function that will allow you to remove elements from the DOM. (hint: there are multiple ways of doing this, but the parent() function might be useful when it comes to selecting the right element) -->
+
+var timeTravel = document.querySelector('#time-travel');
+timeTravel.parentNode.removeChild(timeTravel);
