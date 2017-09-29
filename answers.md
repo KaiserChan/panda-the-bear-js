@@ -138,3 +138,37 @@ Panda the Bear is lying about their skills! Take the "time travel" skill off the
 
 var timeTravel = document.querySelector('#time-travel');
 timeTravel.parentNode.removeChild(timeTravel);
+
+
+<!-- Adding Elements to the DOM -->
+<!-- 1)
+That drawing of Pikachu is really cute. Let’s duplicate it using cloneNode() and insert it at the bottom of the .portfolio-container using insertAdjacentHTML() or appendChild(). -->
+
+var pikachu = document.querySelector("#right-image img");
+pikachu
+var dupPikachu = pikachu.cloneNode(true);
+dupPikachu
+document.querySelector(".portfolio-container").appendChild(dupPikachu);
+
+
+<!-- 2)
+Wow, that was so satisfying I think we should do it 10 more times. Use a for loop to help you do this. -->
+
+var pikachu = document.querySelector("#right-image img");
+var portfolioContainer = document.querySelector(".portfolio-container");
+for (var i = 0; i < 10; i++) {
+    var dupPikachu = pikachu.cloneNode(true);
+    portfolioContainer.appendChild(dupPikachu);
+}
+
+
+<!-- 3)
+Let’s add a message about when the page was last updated. We'll do this by appending a new <li> element to the <ul> in the sidebar (you might need to refresh the page to bring back the list items that we emptied out earlier). -->
+
+var listItem = document.createElement('li');
+var leftSpan = document.createElement('span');
+var lastUpdated = document.createTextNode('Page last updated on');
+leftSpan.appendChild(lastUpdated);
+listItem.appendChild(leftSpan);
+var bioList = document.querySelector(".bio-info")
+bioList.appendChild(listItem);
