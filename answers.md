@@ -21,3 +21,11 @@ var title = document.querySelector("h1", ".highlight")
 title
 title.innerText
 title.innerText = "Kaiser Chan"
+
+
+<!-- 3)
+Select the heading that says "Employment" and change it to something else. (hint: use a descendant selector) -->
+
+var employmentSubtitle = document.querySelector("#employment h3")
+employmentSubtitle
+employmentSubtitle.innerText = "History of Excellence"
