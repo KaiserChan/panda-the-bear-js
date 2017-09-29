@@ -67,3 +67,7 @@ for (var i = 0; i < actionIcon.length; i++) {
 
 <!-- 8)
 Scroll down to the contact form. Change the placeholder attribute of the name field to "identify yourself". -->
+
+var nameField = document.querySelector("#name");
+nameField
+nameField.setAttribute('placeholder', "Identify Yourself")
