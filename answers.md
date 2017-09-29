@@ -71,3 +71,57 @@ Scroll down to the contact form. Change the placeholder attribute of the name fi
 var nameField = document.querySelector("#name");
 nameField
 nameField.setAttribute('placeholder', "Identify Yourself")
+
+
+<!-- 9)
+Change the placeholder attribute of the message field to "state your business". -->
+
+var messageField = document.querySelector("#message")
+messageField
+messageField.setAttribute("placeholder", "State your business")
+
+
+<!-- 10)
+Give the name field a "value" attribute of "your nemesis". -->
+
+var nameField = document.querySelector("#name");
+nameField
+var attribute = document.createAttribute("value");
+attribute.value = "Your nemesis";
+nameField.setAttributeNode(attribute);
+
+
+<!-- 11)
+Change the value attribute of the email field to "koalathebear@gmail.com". -->
+
+var emailField = document.querySelector('#email');
+emailField
+var attribute = document.createAttribute("value");
+attribute.value = 'koalathebear@gmail.com';
+emailField.setAttributeNode(attribute);
+
+
+<!-- 12)
+Change the value of the submit button on the contact form to "En garde!". -->
+
+var submitButton = document.querySelector('#submit');
+submitButton
+submitButton.setAttribute('value', 'En garde!');
+
+
+<!-- 13)
+We should stop Koala from sending an email to Panda that they might regret! Find a way to disable the submit button (hint: familiarize yourself with the disabled attribute). -->
+
+var submitButton = document.querySelector('#submit');
+submitButton
+var disable = document.createAttribute('disabled');
+submitButton.setAttributeNode(disable);
+
+<!-- 14)
+We should help Panda protect their privacy by erasing their personal details from the sidebar. -->
+
+var bioInfoValue = document.querySelectorAll('.bio-info-value');
+bioInfoValue
+for (var i = 0; i < bioInfoValue.length; i++) {
+    bioInfoValue[i].innerText = null;
+}
