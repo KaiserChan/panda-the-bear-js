@@ -29,3 +29,41 @@ Select the heading that says "Employment" and change it to something else. (hint
 var employmentSubtitle = document.querySelector("#employment h3")
 employmentSubtitle
 employmentSubtitle.innerText = "History of Excellence"
+
+
+<!-- 4)
+Change the colour of the body -->
+
+document.body.style.backgroundColor = "darkblue";
+
+
+<!-- 5)
+Change the colour of each element using the highlight class. Use a for loop to do this. -->
+
+var highlight = document.querySelectorAll(".highlight")
+highlight
+for (var i = 0; i < highlight.length; i++) {
+    highlight[i].style.color = "yellow";
+}
+
+
+<!-- 6)
+Change the font family of the h1 to 'monospace'. -->
+
+var title = document.querySelector("h1")
+title
+title.style.fontFamily = 'monospace'
+
+
+<!-- 7)
+Find a way to select the round icons in the sidebar and then change their colour. -->
+
+var actionIcon = document.querySelectorAll(".action-icon-bg")
+actionIcon
+for (var i = 0; i < actionIcon.length; i++) {
+    actionIcon[i].style.backgroundColor = "red";
+}
+
+
+<!-- 8)
+Scroll down to the contact form. Change the placeholder attribute of the name field to "identify yourself". -->
