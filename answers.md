@@ -172,3 +172,12 @@ leftSpan.appendChild(lastUpdated);
 listItem.appendChild(leftSpan);
 var bioList = document.querySelector(".bio-info")
 bioList.appendChild(listItem);
+
+var nameClass = document.querySelectorAll('li');
+
+nameClass[3].setAttribute('class','bio-info-item');
+
+var rightSpan = document.createElement('span');
+var updatedAt = new Date();
+rightSpan.innerHTML = updatedAt;
+var nameClass = document.querySelectorAll('.bio-info-item'); nameClass[3].appendChild(rightSpan)
